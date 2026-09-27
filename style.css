@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    font-family: Arial, sans-serif;
+    background: #e9edf5;
+    color: #222;
+}
+
+.game {
+    width: min(620px, 100%);
+    padding: 32px;
+    background: #fff;
+    border: 1px solid #d8dce5;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.game-header {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.game-header h1 {
+    margin-bottom: 8px;
+    font-size: 32px;
+}
+
+.game-header p {
+    color: #666;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 28px;
+}
+
+.choice {
+    width: 150px;
+    min-height: 125px;
+    padding: 16px;
+    border: 1px solid #d8dce5;
+    border-radius: 10px;
+    background: #f7f8fa;
+    color: #222;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s, border-color 0.2s, background-color 0.2s;
+}
+
+.choice:hover {
+    transform: translateY(-3px);
+    border-color: #5572d8;
+    background: #eef2ff;
+}
+
+.choice-icon {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 38px;
+}
+
+.result {
+    min-height: 105px;
+    padding: 20px;
+    margin-bottom: 26px;
+    border-radius: 10px;
+    background: #f5f6f8;
+    text-align: center;
+}
+
+.result h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.result p {
+    color: #666;
+}
+
+.score {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-bottom: 26px;
+    text-align: center;
+}
+
+.score div {
+    min-width: 90px;
+}
+
+.score span {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 600;
+}
+
+.score strong {
+    font-size: 34px;
+    color: #4262c8;
+}
+
+.reset {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 22px;
+    border: 0;
+    border-radius: 7px;
+    background: #4262c8;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.reset:hover {
+    background: #354fa8;
+}
+
+@media (max-width: 600px) {
+    .game {
+        padding: 24px 18px;
+    }
+
+    .game-header h1 {
+        font-size: 27px;
+    }
+
+    .choices {
+        gap: 10px;
+    }
+
+    .choice {
+        width: 31%;
+        min-height: 105px;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .choice-icon {
+        font-size: 30px;
+    }
+
+    .score {
+        gap: 45px;
+    }
+}
